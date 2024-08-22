@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{
+            background-color: lightgrey;
+            background-image: url("atmph1.avif");
+            width: 600px;
+            height: 400px;
+            border: 25px solid green;
+            padding: 80px;
+            margin-left: 260px;
+        }
+        h1{color: white; font-size: 20px;    }
+
+        h5{color: white; font-size: 20px;    }
+    #d1{
+        padding:20px 8px ;
+        background-color:rgb(121, 199, 174);
+        border: 2px solid white;
+        border-radius: 10px;
+        width: 30%;
+        float:left;
+    }
+    #d2{
+        padding:20px 8px;
+        background-color:rgb(121, 199, 174);
+        border: 2px solid white;
+        width: 30%;
+        border-radius: 10px;
+        float:inline-end;
+    }
+    #d3{
+        padding:20px 8px;
+        background-color:rgb(121, 199, 174);
+        border: 2px solid white;
+        width: 30%;
+        border-radius: 10px;
+        position: relative;
+        top: 160px;
+        left: 200px;
+    }
+    #d4{
+        padding:20px 8px;
+        background-color:rgb(121, 199, 174);
+        border: 2px solid white;
+        width: 30%;
+        border-radius: 10px;
+        position: relative;
+        top: 100px;
+        right: 200px;
+         }
+
+
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <center>    <h1>WELCOME <b id="nam"></b></h1>
+            <h1>Please select transaction </h1>
+           <button onclick="widthdraw()" id="d1"> WITHDRAWAL</button>
+           <button onclick="deposite()" id="d2">DEPOSIT</button>
+           <button onclick="quit()" id="d3"> QUIT TRANSACTION </button> 
+           <button onclick="balance()" id="d4">BALANCE ENQUARY</button>     
+           
+ </center>
+ </div>
+
+ <script src="atmmachine.js">       
+</script>
+</body>
+</html>

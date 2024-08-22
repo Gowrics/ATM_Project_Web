@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{
+            background-color: lightgrey;
+            background-image: url("atmph1.avif");
+            width: 600px;
+            height: 400px;
+            border: 25px solid green;
+            padding: 80px;
+            margin-left: 260px;
+        }
+        #prn{
+            width: 20%;
+            padding: 15px 10px;
+            background-color:antiquewhite;
+            border-radius: 9px;
+        position: relative;
+        left: 30px;margin-top: 20px;
+        }
+        #hm{
+            width: 20%;
+            padding: 15px 10px;
+            background-color:antiquewhite;
+            border-radius: 9px;
+        position: relative;
+        left: 30px;margin-top: 20px;
+        }
+
+        table,tr,td,th{
+    width: 600px;
+    height: 40px;
+    border: 2px solid white;
+    padding: 20px;
+    background-color:blueviolet;
+}
+    
+    </style>
+</head>
+<body>
+    <div id="div1">
+           <center>
+            <table>
+                <h1>Customer Details</h1>
+                <tr><th>Customer Nmae:</th><td id="nam"></td>
+                <tr><th>Customer Accno:</th><td id="ano"></td>
+                <tr><th>Customer Balance:</th><td id="balamnt"></td>
+                   </table>
+                <button onclick="printsc()" id="prn">Print statement</button>
+                <button onclick="home()" id="hm">Home</button>
+               
+        </center>
+    </div>
+    <script>       
+        window.onload = function() {
+          // Get the value from localStorage
+          var bal = localStorage.getItem('balance');
+          var cnam=localStorage.getItem('bname');
+          var cacid=localStorage.getItem('baccno');
+          
+          document.getElementById("nam").innerHTML=cnam;
+          document.getElementById("ano").innerHTML=cacid;       
+          document.getElementById("balamnt").innerHTML=bal;
+        }
+        function home(){
+            window.location.href="atmmachin1.html";
+        }
+        function printsc(){
+            window.print();
+        }
+    </script>
+</body>
+</html>
